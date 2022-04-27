@@ -120,6 +120,14 @@ p {
   color: var(--accent-color);
 }
 
+/* .current::after {
+  width: 48px;
+  height: 4px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+} */
+
 /* Styles do auth-link  (nav) */
 .auth-nav {
   display: flex;
@@ -298,8 +306,7 @@ p {
   padding-top: 0;
 }
 
-.works-title {
-  margin-top: 0;
+.title-work {
   margin-bottom: 50px;
 }
 
