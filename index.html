@@ -74,7 +74,9 @@
             для вашего бизнеса
           </h1>
 
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -475,6 +477,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="modal" data-modal>
+      <div class="modal-window">
+        <button class="modal-button" data-modal-close></button>
+      </div>
+    </div>
 
     <!-- skript -->
     <script src="./js/modal.js"></script>
