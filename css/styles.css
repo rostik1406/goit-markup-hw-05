@@ -219,8 +219,8 @@ p {
 
   background-image: linear-gradient(
       to right,
-      var(--linear-gradient-color),
-      var(--linear-gradient-color)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img.svg);
   background-repeat: no-repeat;
@@ -252,6 +252,7 @@ p {
   letter-spacing: 0.06em;
   cursor: pointer;
 
+  border: transparent;
   padding: 10px 32px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -352,15 +353,15 @@ p {
 }
 
 .works-container {
+  display: flex;
   position: absolute;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   left: 0;
   bottom: 0;
 
   width: 370px;
   height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   background: var(--linear-gradient-color);
 }
@@ -634,7 +635,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
 
-  transition-property: background-color, color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
@@ -666,7 +667,7 @@ p {
 }
 
 .filter-link {
-  position: relative;
+  /* position: relative; */
   display: block;
   color: var(--primary-text-color);
 
@@ -681,15 +682,17 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.filter-link:hover .filter-overlay {
+  transform: translateY(0);
+}
+
 .filter-images {
   position: relative;
+  width: 100%;
 
   overflow: hidden;
 }
 
-.filter-images:hover .filter-overlay {
-  transform: translateY(0);
-}
 
 .filter-overlay {
   position: absolute;
@@ -706,6 +709,7 @@ p {
 }
 
 .filter-images-text {
+
   padding: 63px 24px;
 
   font-weight: 400;
@@ -716,6 +720,7 @@ p {
 }
 
 .filter-container {
+  margin-top: 0;
   padding: 20px 24px;
 
   border-right-width: 1px;
@@ -797,4 +802,5 @@ p {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
