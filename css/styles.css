@@ -693,7 +693,6 @@ p {
   overflow: hidden;
 }
 
-
 .filter-overlay {
   position: absolute;
 
@@ -709,7 +708,6 @@ p {
 }
 
 .filter-images-text {
-
   padding: 63px 24px;
 
   font-weight: 400;
