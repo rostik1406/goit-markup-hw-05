@@ -293,6 +293,10 @@ p {
   display: flex;
 }
 
+.features-list .features-item + .features-item {
+  margin-left: 30px;
+}
+
 .icon-features {
   display: flex;
   justify-content: center;
@@ -307,10 +311,6 @@ p {
 .icon-icons {
   width: 70px;
   height: 70px;
-}
-
-.features-list .features-item + .features-item {
-  margin-left: 30px;
 }
 
 .features-title {
@@ -579,13 +579,13 @@ p {
 }
 
 .footer-link-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.1);
   fill: var(--text-white-color);
