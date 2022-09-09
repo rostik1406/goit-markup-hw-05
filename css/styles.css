@@ -327,9 +327,6 @@ p {
 .features-text {
   font-size: 14px;
   line-height: 1.71;
-
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /*  section Чем мы занимаемся  */
@@ -380,7 +377,7 @@ p {
   margin-left: 30px;
 }
 
-/*  section Наша команда */
+/*.................  section Наша команда ...............*/
 .team {
   background-color: var(--background-minor-color);
 }
@@ -667,7 +664,6 @@ p {
 }
 
 .filter-link {
-  /* position: relative; */
   display: block;
   color: var(--primary-text-color);
 
@@ -750,7 +746,7 @@ p {
   line-height: 1.87;
 }
 
-/* Модальне вікно */
+/****************** Модальне вікно ******************/
 
 .modal {
   position: fixed;
@@ -776,7 +772,7 @@ p {
   width: 528px;
   height: 581px;
 
-  background: var(--text-white-color);
+  background-color: var(--text-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
